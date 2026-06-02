@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>AI Resume Helper</title>
 </head>
 <body>
     <h1>AI Resume Helper</h1>
     <p>Paste your resume and the Job Description to get your personalized Cover Letter instantly.</p>
 
-    <div>
+    <div class="inputSection">
         <label>Your Resume</label>
         <textarea id="resume" placeholder="Paste your Resume Here"></textarea>
     </div>
-    <div>
+    <div class="inputSection">
         <label>Job Description</label>
         <textarea id="job-description" placeholder="Paste the Job Description Here"></textarea>
     </div>
     <button id="generatebtn">Generate Cover Letter</button>
-    <div>
+    <div class="outputSection">
         <label>Your Cover Letter</label>
-        <p id="output">Your personalized Cover Letter will appear here.</p>
+        <p id="outputSection">Your personalized Cover Letter will appear here.</p>
     </div>
 </body>
 </html>
