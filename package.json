@@ -1,0 +1,25 @@
+{
+  "name": "ai-resume-generator",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kanchan7777/ai-resume-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kanchan7777/ai-resume-generator/issues"
+  },
+  "homepage": "https://github.com/Kanchan7777/ai-resume-generator#readme",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2"
+  }
+}
