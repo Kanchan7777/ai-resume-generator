@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 
@@ -6,10 +7,12 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('.'));
 
+const apiKey = process.env.GEMINI_API_KEY;
+
 app.post('/generate', async (req, res) => {
     const { resume, jobDescription } = req.body;
 
-    const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AQ.Ab8RN6I-_qxOt7wuzqWFMxSA1HdLq6f3rNiagvZe_N0eOEZupQ', {
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
